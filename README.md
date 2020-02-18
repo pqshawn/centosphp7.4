@@ -6,7 +6,7 @@
 
 
 
-## 可以自己生成镜像
+## 一、可以自己生成镜像
 
 ### 1.克隆文件到本地
     $ git clone https://github.com/pqshawn/centosphp7.4.git
@@ -20,7 +20,7 @@
     $ docker run -d --name php-fpm -p 9000:9000 -v /data/www:/data/www  php7.4
 
 
-## 可以直接拉取镜像
+## 二、可以直接拉取镜像
 如果有阿里云账号，可以直接pull
 
 ### 1. 登录阿里云Docker Registry
@@ -36,7 +36,7 @@
 ### 3.启动
     docker run -d --name php-fpm -p 9000:9000 -v /data/www:/data/www  php7.4
 
-## 配合nginx使用
+## 三、配合nginx使用
     建议尽量不整合镜像在一块，一个服务只做一件事
     nginx单独下载，直接下载官方版本
 
